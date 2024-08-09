@@ -1,0 +1,129 @@
+.home{
+    height: 90vh;
+    width: 100vw;
+    background-color: #1D1D1D;
+    display: flex;
+    position: relative;
+}
+
+.left{
+    width: 20vw;
+    height: 100%;
+    position: relative
+}
+
+.left-text{
+    position: relative;
+    /* background-color: pink; */
+    top: 30%;
+    left: 35%;
+    z-index: 3;
+    height: 200px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.year{
+    color: #fff;
+}
+
+.text-title{
+    text-transform: capitalize;
+    font-size: 45px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #fff;
+}
+
+.text-link{
+    color: #EC933E;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    border-bottom: 3px solid #EC933E;
+}
+
+.right{
+    width: 80vw;
+    height: 100%;
+}
+
+.right-image{
+    width: 100%;
+    height: 85%;
+    position: relative;
+}
+
+.right-image img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+
+.right-image::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+.right-below{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.buttons{
+    /* background-color: red; */
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chevron{
+    color: #fff;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.loader-container{
+    /* background-color: #EC933E; */
+    width: 300px;
+    margin-right: 50px;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.loader-number{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.loader{
+background: #242424;
+width: 200px;
+height: 5px;
+position: relative;
+border-radius: 5px;
+
+}
+
+.loader-fill{
+    height: 100%;
+    background: #fff;
+    width: 0;
+    transition: width .3s ease;
+    border-radius: 5px;
+}
