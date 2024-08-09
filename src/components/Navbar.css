@@ -1,0 +1,22 @@
+.navbar{
+/* position: fixed; */
+background-color: blue;
+ height: 10vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.navbar .navlink{
+   color: red;
+   text-decoration: none;
+   padding: 0.8rem 1rem; 
+   transition: .3s ease-in;
+   margin-left: 30px;
+}
+
+.navbar .navlink.active{
+    font-weight: bold;
+    border-bottom: 4px solid red;
+    transition: .3s ease-in;
+}
